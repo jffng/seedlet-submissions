@@ -14,6 +14,9 @@ Seedlet is a simple, text-driven, single-column theme.
 
 == Changelog ==
 
+= 1.0.4 =
+* Accessibility fixes: link hover styles, landmark roles, remove positive tabindex
+
 = 1.0.2-3 =
 * Fix mobile menu tab accessibility issues
 * Fix escaping and prefixing issues

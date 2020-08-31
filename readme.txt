@@ -18,6 +18,10 @@ Seedlet is a great option for professionals and creatives looking for a sophisti
 
 == Changelog ==
 
+= 1.0.6 =
+* Add block patterns 
+* Add support for IE editor styles 
+
 = 1.0.5 =
 * Accessibility fixes: landmark roles and aria-labels
 

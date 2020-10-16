@@ -18,6 +18,13 @@ Seedlet is a great option for professionals and creatives looking for a sophisti
 
 == Changelog ==
 
+= 1.1.0 =
+* Refactor the menu styles so they can be loaded separately and dequeued in child themes
+* Use ponyfill for IE11 support
+* Add CSS sourcemaps
+* Simplify the responsive rules and alignments
+* Bug fixes and improvements
+
 = 1.0.8 =
 * Add block editor theme tags
 * Correct text color rules for nested blocks
@@ -105,4 +112,6 @@ License: CC0
 Source: https://www.si.edu/object/hymenoxys-odorata-dc:nmnhbotany_13045011
 		https://www.si.edu/object/coccocypselum-guianense-aubl-k-schum:nmnhbotany_10752403
 		https://www.si.edu/object/coccocypselum-guianense-aubl-k-schum:nmnhbotany_10672835
-Included in theme screenshot.
+		https://www.si.edu/object/coccocypselum-guianense-aubl-k-schum:nmnhbotany_13757252
+		https://www.si.edu/object/nephroma-sp:nmnhbotany_13875654
+Included in theme screenshot and in block patterns. 

@@ -9,56 +9,23 @@
  */
 :root {
 	--responsive--spacing-horizontal: calc(2 * var(--global--spacing-horizontal));
-	--responsive--aligndefault-width: 100%;
-	--responsive--alignwide-width: 100%;
+	--responsive--aligndefault-width: calc(100vw - var(--responsive--spacing-horizontal));
+	--responsive--alignwide-width: calc(100vw - var(--responsive--spacing-horizontal));
 	--responsive--alignfull-width: 100%;
 	--responsive--alignwide-width-multiplier: calc(16 * var(--global--spacing-horizontal));
-	--responsive--alignright-margin: var(--global--spacing-horizontal);
-	--responsive--alignleft-margin: var(--global--spacing-horizontal);
+	--responsive--alignrightleft-width: var(--global--spacing-horizontal);
 }
 
 @media only screen and (min-width: 482px) {
 	:root {
-		--responsive--aligndefault-width: calc(482px - var(--responsive--spacing-horizontal));
-		--responsive--alignwide-width: calc(482px - var(--responsive--spacing-horizontal));
-		--responsive--alignright-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
-		--responsive--alignleft-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
-	}
-}
-
-@media only screen and (min-width: 592px) {
-	:root {
-		--responsive--aligndefault-width: calc(482px - var(--responsive--spacing-horizontal));
-		--responsive--alignwide-width: calc(592px - var(--responsive--spacing-horizontal));
-		--responsive--alignright-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
-		--responsive--alignleft-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
+		--responsive--alignrightleft-width: calc( 50% - ( 0.5 * (100vw - var(--responsive--aligndefault-width))) );
 	}
 }
 
 @media only screen and (min-width: 652px) {
 	:root {
-		--responsive--aligndefault-width: calc(592px - var(--responsive--spacing-horizontal));
-		--responsive--alignwide-width: calc(652px - var(--responsive--spacing-horizontal));
-		--responsive--alignright-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
-		--responsive--alignleft-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
-	}
-}
-
-@media only screen and (min-width: 822px) {
-	:root {
-		--responsive--aligndefault-width: calc(652px - var(--responsive--spacing-horizontal));
-		--responsive--alignwide-width: calc(822px - var(--responsive--spacing-horizontal));
-		--responsive--alignright-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
-		--responsive--alignleft-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	:root {
-		--responsive--aligndefault-width: calc(652px - var(--responsive--spacing-horizontal));
-		--responsive--alignwide-width: calc(822px - var(--responsive--spacing-horizontal));
-		--responsive--alignright-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
-		--responsive--alignleft-margin: calc( 0.5 * (100vw - var(--responsive--aligndefault-width)));
+		--responsive--aligndefault-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 620px);
+		--responsive--alignwide-width: min(calc(100vw - 2 * var(--global--spacing-horizontal)), 790px);
 	}
 }
 
@@ -95,6 +62,9 @@ body[class*="woocommerce"] .entry-content > .woocommerce {
 
 /**
  * Output
+ */
+/**
+ * Required Variables
  */
 body[class*="woocommerce"] #page .site-content #respond input#submit,
 body[class*="woocommerce"] #page .site-content #respond input#submit.alt,
@@ -2041,3 +2011,5 @@ body[class*="woocommerce"] #page .widget_price_filter .price_slider_wrapper .ui-
 		margin-right: auto;
 	}
 }
+
+/*# sourceMappingURL=style-woocommerce.css.map */
